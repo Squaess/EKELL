@@ -50,7 +50,7 @@ public class RowAdapter extends ArrayAdapter<DataModel>  {
         }
         DataModel object = data.get(position);
         rowBeanHolder.name.setText(object.getName());
-        rowBeanHolder.imgIcon.setImageResource(object.ImageID);
+        rowBeanHolder.imgIcon.setImageResource(object.getImageID());
         rowBeanHolder.price.setText(String.valueOf(object.getPrice()));
         if (object.isAvailable()) {
             rowBeanHolder.price.setTextColor(Color.GREEN);

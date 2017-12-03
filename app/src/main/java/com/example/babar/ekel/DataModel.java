@@ -6,20 +6,20 @@ package com.example.babar.ekel;
 
 public class DataModel {
 
-    Boolean available;
-    int mealId;
-    String name;
-    double price;
-    int ImageID;
+    private Boolean available;
+    private int mealId;
+    private String name;
+    private double price;
+    private int ImageID;
 
-    public DataModel(Boolean available, int mealId, String name, double price){
+    DataModel(Boolean available, int mealId, String name, double price){
         this.available = available;
         this.mealId = mealId;
         this.name = name;
         this.price = price;
     }
 
-    public void setImageId(int id){
+    void setImageId(int id){
         this.ImageID = id;
     }
 
@@ -27,15 +27,17 @@ public class DataModel {
         return name;
     }
 
-    public double getPrice(){
+    double getPrice(){
         return price;
     }
 
-    public int getMealId(){
+    int getMealId(){
         return mealId;
     }
 
-    public boolean isAvailable(){
+    boolean isAvailable(){
         return available;
     }
+
+    int getImageID(){return ImageID;}
 }

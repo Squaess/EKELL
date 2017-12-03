@@ -6,22 +6,63 @@
     android:orientation="vertical">
 
     <ImageView
+        android:layout_gravity="center"
+        android:layout_weight="1"
         android:id="@+id/order_image"
-        android:src="@drawable/ic_launcher_background"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="TODO" />
+        android:layout_height="0dp"
+        android:contentDescription="@string/hello_blank_fragment"
+        android:src="@drawable/ic_launcher_background" />
 
     <TextView
+        android:gravity="center"
+        android:layout_weight="0.7"
         android:id="@+id/order_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:text="@string/hello_blank_fragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:textSize="20sp"
+        android:textStyle="bold"/>
 
     <TextView
+        android:layout_weight="0.5"
         android:id="@+id/order_price"
-        android:text="@string/hello_blank_fragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="@string/hello_blank_fragment" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <TextView
+
+            android:id="@+id/table_number_label"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/table_label" />
+
+        <EditText
+            android:layout_margin="3dp"
+            android:id="@+id/table_number"
+            android:gravity="center"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:inputType="number" />
+
+
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/order_button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="@string/zamow" />
+
+
+    </LinearLayout>
 
 </LinearLayout>

@@ -22,7 +22,7 @@ public class MainActivity extends FragmentActivity implements ListFragment.OnIte
         Intent intent = new Intent(this, OrderActivity.class);
         intent.putExtra("NAME", model.getName());
         intent.putExtra("ID", model.getMealId());
-        intent.putExtra("IMAGE", model.ImageID);
+        intent.putExtra("IMAGE", model.getImageID());
         intent.putExtra("PRICE", model.getPrice());
         Toast.makeText(this, "startuje nowa intetn", Toast.LENGTH_SHORT).show();
         startActivityForResult(intent, RETURN_RATING);
