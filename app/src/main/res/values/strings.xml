@@ -4,5 +4,17 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="zamow">zamów</string>
-    <string name="table_label">Podaj numer stolika</string>
+    <string name="table_label">Numer stolika:</string>
+    <string name="error1">Produkt niedostępny</string>
+    <string-array name="tables">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+
 </resources>

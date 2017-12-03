@@ -9,7 +9,7 @@
         android:layout_gravity="center"
         android:layout_weight="1"
         android:id="@+id/order_image"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:contentDescription="@string/hello_blank_fragment"
         android:src="@drawable/ic_launcher_background" />
@@ -21,15 +21,18 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:text="@string/hello_blank_fragment"
-        android:textSize="20sp"
+        android:textSize="50sp"
         android:textStyle="bold"/>
 
     <TextView
-        android:layout_weight="0.5"
+        android:layout_weight="0.3"
         android:id="@+id/order_price"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:gravity="center"
+        android:paddingEnd="20dp"
+        android:textSize="35sp"
+        android:paddingStart="0dp"
+        android:gravity="center|end"
         android:text="@string/hello_blank_fragment" />
 
     <LinearLayout
@@ -38,28 +41,34 @@
         android:layout_weight="0.5">
 
         <TextView
-
+            android:layout_weight="0.5"
             android:id="@+id/table_number_label"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:gravity="center"
+            android:textSize="25sp"
             android:text="@string/table_label" />
 
-        <EditText
+        <Spinner
+            android:layout_weight="0.5"
+            android:textAlignment="textEnd"
             android:layout_margin="3dp"
             android:id="@+id/table_number"
-            android:gravity="center"
-            android:layout_width="130dp"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:inputType="number" />
 
 
 
         <Button
-            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:background="@drawable/zamow_button"
+            android:layout_margin="12dp"
+            android:layout_weight="0.25"
             android:id="@+id/order_button"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:text="@string/zamow" />
 
 
