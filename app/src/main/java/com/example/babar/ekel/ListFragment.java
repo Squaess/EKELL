@@ -90,7 +90,7 @@ public class ListFragment extends Fragment {
         });
     }
 
-    private void fetchData() {
+    void fetchData() {
         String urlString = BASE_URL+"get/meal/all";
         Ion.with(this).load(urlString).asString().setCallback(new FutureCallback<String>() {
             @Override
@@ -122,4 +122,5 @@ public class ListFragment extends Fragment {
             e.printStackTrace();
         }
     }
+
 }

@@ -13,13 +13,14 @@ import android.widget.Toast;
 public class MainActivity extends FragmentActivity implements ListFragment.OnItemClick {
 
     static final int RETURN_RATING = 1;
+    ListFragment listFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, new ListFragment()).commit();
+        listFragment = new ListFragment();
+        getSupportFragmentManager().beginTransaction().add(R.id.fragment_container, listFragment).commit();
     }
 
     @Override
@@ -46,5 +47,12 @@ public class MainActivity extends FragmentActivity implements ListFragment.OnIte
             toast.show();
 
         }
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        listFragment.mArray.clear();
+        listFragment.fetchData();
     }
 }

@@ -6,6 +6,6 @@
     android:textSize="20sp"
     android:gravity="end"
     android:textColor="#000"
-    android:padding="15dp"
+    android:padding="10dp"
     android:paddingEnd="20dp"
     />

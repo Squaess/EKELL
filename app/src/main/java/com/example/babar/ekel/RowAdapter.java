@@ -51,7 +51,8 @@ public class RowAdapter extends ArrayAdapter<DataModel>  {
         DataModel object = data.get(position);
         rowBeanHolder.name.setText(object.getName());
         rowBeanHolder.imgIcon.setImageResource(object.getImageID());
-        rowBeanHolder.price.setText(String.valueOf(object.getPrice()));
+        String cena = "Cena: " + String.valueOf(object.getPrice());
+        rowBeanHolder.price.setText(cena);
         if (object.isAvailable()) {
             rowBeanHolder.price.setTextColor(Color.GREEN);
         }else {
